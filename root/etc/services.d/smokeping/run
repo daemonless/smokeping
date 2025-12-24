@@ -1,0 +1,7 @@
+#!/bin/sh
+# SmokePing s6 service (source build)
+
+s6-ready-when fetch -qo /dev/null http://localhost:80/smokeping/smokeping.cgi
+
+# Start Smokeping daemon
+exec /usr/local/bin/s6-setuidgid bsd /usr/local/smokeping/bin/smokeping --config=/config/config --nodaemon

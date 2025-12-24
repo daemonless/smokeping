@@ -1,0 +1,149 @@
+#!/bin/sh
+# Initialize SmokePing config
+
+# Set ownership based on PUID/PGID environment variables
+PUID=${PUID:-1000}
+PGID=${PGID:-1000}
+
+# Update smokeping user/group IDs if different from default (295)
+if [ "$PUID" != "295" ] || [ "$PGID" != "295" ]; then
+    echo "Setting smokeping UID:GID to $PUID:$PGID"
+    pw groupmod smokeping -g "$PGID" 2>/dev/null || true
+fi
+
+# Ensure directories exist and have correct ownership
+mkdir -p /config /var/lib/smokeping/data /var/lib/smokeping/images /var/run/smokeping /var/log/smokeping
+chown -R bsd:bsd /config /var/lib/smokeping /var/run/smokeping /var/log/smokeping
+
+# Determine paths based on install type
+# Source build: /usr/local/smokeping/
+# Pkg install: /usr/local/etc/smokeping/ and /usr/local/bin/smokeping
+if [ -d /usr/local/smokeping/bin ]; then
+    # Source build
+    SMOKEPING_ETC=/usr/local/smokeping/etc
+    SMOKEPING_HTDOCS=/usr/local/smokeping/htdocs
+else
+    # Pkg install - config is in /usr/local/etc/smokeping/
+    SMOKEPING_ETC=/usr/local/etc/smokeping
+    SMOKEPING_HTDOCS=/usr/local/smokeping/htdocs
+fi
+
+echo "Using SMOKEPING_ETC=$SMOKEPING_ETC"
+
+# Copy default config if not exists
+if [ ! -f /config/config ]; then
+    echo "Creating default smokeping config"
+    # Always use our minimal config - pkg sample has wrong paths
+    if false && [ -f ${SMOKEPING_ETC}/config.dist ]; then
+        cp ${SMOKEPING_ETC}/config.dist /config/config
+    elif false && [ -f ${SMOKEPING_ETC}/config.sample ]; then
+        cp ${SMOKEPING_ETC}/config.sample /config/config
+    else
+        # Create minimal config with correct paths
+        cat > /config/config << EOFCONFIG
+*** General ***
+owner    = SmokePing Admin
+contact  = admin@localhost
+mailhost = localhost
+imgcache = /var/lib/smokeping/images
+imgurl   = /smokeping/images
+datadir  = /var/lib/smokeping/data
+piddir   = /var/run/smokeping
+cgiurl   = http://localhost/smokeping/smokeping.cgi
+smokemail = ${SMOKEPING_ETC}/smokemail
+tmail    = ${SMOKEPING_ETC}/tmail
+
+*** Alerts ***
+to = admin@localhost
+from = smokeping@localhost
+
++lossdetect
+type = loss
+pattern = >0%,*12*,>0%,*12*,>0%
+comment = loss 3 times in a row
+
+*** Database ***
+step     = 300
+pings    = 20
+
+AVERAGE  0.5   1  1008
+AVERAGE  0.5  12  4320
+    MIN  0.5  12  4320
+    MAX  0.5  12  4320
+AVERAGE  0.5 144   720
+    MAX  0.5 144   720
+    MIN  0.5 144   720
+
+*** Presentation ***
+template = ${SMOKEPING_ETC}/basepage.html
+
++ charts
+menu = Charts
+title = The most interesting destinations
+
+++ stddev
+sorter = StdDev(entries=>4)
+title = Top Standard Deviation
+menu = Std Deviation
+format = Standard Deviation %f
+
+++ max
+sorter = Max(entries=>5)
+title = Top Max Roundtrip Time
+menu = by Max
+format = Max Roundtrip Time %f seconds
+
+++ loss
+sorter = Loss(entries=>5)
+title = Top Packet Loss
+menu = Loss
+format = Packets Lost %f
+
++ overview
+width = 600
+height = 50
+range = 10h
+
++ detail
+width = 600
+height = 200
+unison_tolerance = 2
+
+"Last 3 Hours"    3h
+"Last 30 Hours"   30h
+"Last 10 Days"    10d
+"Last 400 Days"   400d
+
+*** Probes ***
++ FPing
+binary = /usr/local/sbin/fping
+
+*** Targets ***
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to SmokePing
+
++ Local
+menu = Local Network
+title = Local Network Monitoring
+
+++ LocalMachine
+menu = Local Machine
+title = Localhost
+host = localhost
+EOFCONFIG
+    fi
+    chown bsd:bsd /config/config
+fi
+
+# Link config to expected location
+ln -sf /config/config ${SMOKEPING_ETC}/config 2>/dev/null || true
+
+# For source build: CGI runs via symlink at /usr/local/bin/smokeping_cgi
+# which looks for config at ../etc/config (/usr/local/etc/config)
+if [ -d /usr/local/smokeping/bin ]; then
+    mkdir -p /usr/local/etc
+    ln -sf /config/config /usr/local/etc/config
+fi

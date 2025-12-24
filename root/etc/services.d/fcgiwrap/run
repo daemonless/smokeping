@@ -1,0 +1,7 @@
+#!/bin/sh
+# fcgiwrap s6 service for SmokePing CGI
+
+# Create socket with www ownership so nginx can connect
+# Note: -u/-g flags for process user cause "Permission denied" in FreeBSD jails
+# Using -U/-G for socket ownership instead
+exec /usr/local/bin/spawn-fcgi -n -s /var/run/fcgiwrap.sock -M 0660 -U www -G www -- /usr/local/sbin/fcgiwrap 2>&1
