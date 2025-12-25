@@ -27,10 +27,12 @@ RUN pkg update && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 
 # Download and build SmokePing from source
-ARG SMOKEPING_VERSION=2.8.2
-RUN mkdir -p /app && echo "${SMOKEPING_VERSION}" > /app/version && \
+RUN SMOKEPING_TAG=$(fetch -qo - "https://api.github.com/repos/oetiker/SmokePing/releases/latest" | \
+    sed -n 's/.*"tag_name": *"\([^"]*\)".*/\1/p') && \
+    SMOKEPING_VERSION=$(echo "$SMOKEPING_TAG" | sed 's/^v//') && \
+    mkdir -p /app && echo "${SMOKEPING_VERSION}" > /app/version && \
     ln -sf /usr/local/bin/gmake /usr/local/bin/make && \
-    fetch -o /tmp/smokeping.tar.gz "https://github.com/oetiker/SmokePing/releases/download/${SMOKEPING_VERSION}/smokeping-${SMOKEPING_VERSION}.tar.gz" && \
+    fetch -o /tmp/smokeping.tar.gz "https://github.com/oetiker/SmokePing/releases/download/${SMOKEPING_TAG}/smokeping-${SMOKEPING_VERSION}.tar.gz" && \
     cd /tmp && \
     tar -xzf smokeping.tar.gz && \
     cd smokeping-${SMOKEPING_VERSION} && \
