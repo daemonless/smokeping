@@ -3,7 +3,7 @@ FROM ghcr.io/daemonless/nginx-base:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="gmake autoconf automake gawk perl5 p5-CGI p5-CGI-Fast p5-CGI-Session p5-FCGI p5-Config-Grammar p5-Digest-HMAC p5-IO-Pty-Easy p5-IO-Socket-SSL p5-libwww p5-LWP-Protocol-https p5-Net-DNS p5-Net-OpenSSH p5-Net-SNMP p5-Net-Telnet p5-perl-ldap p5-SNMP_Session p5-Socket6 rrdtool fping fcgiwrap spawn-fcgi"
-LABEL org.opencontainers.image.title="smokeping" \
+LABEL org.opencontainers.image.title="SmokePing" \
     org.opencontainers.image.description="SmokePing network latency monitor on FreeBSD" \
     org.opencontainers.image.source="https://github.com/daemonless/smokeping" \
     org.opencontainers.image.url="https://oss.oetiker.ch/smokeping/" \

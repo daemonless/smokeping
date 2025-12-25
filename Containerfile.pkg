@@ -2,7 +2,7 @@ ARG BASE_VERSION=15-quarterly
 FROM ghcr.io/daemonless/nginx-base:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
-LABEL org.opencontainers.image.title="smokeping" \
+LABEL org.opencontainers.image.title="SmokePing" \
       org.opencontainers.image.description="SmokePing network latency monitor on FreeBSD" \
       org.opencontainers.image.source="https://github.com/daemonless/smokeping" \
       org.opencontainers.image.url="https://oss.oetiker.ch/smokeping/" \
