@@ -32,7 +32,7 @@ RUN pkg update && \
 
 # Download and build SmokePing from source
 RUN SMOKEPING_TAG=$(fetch -qo - "${UPSTREAM_URL}" | \
-    sed -n "${UPSTREAM_SED}" | head -1) && \
+    jq -r "${UPSTREAM_JQ}") && \
     SMOKEPING_VERSION=$(echo "$SMOKEPING_TAG" | sed 's/^v//') && \
     mkdir -p /app && echo "${SMOKEPING_VERSION}" > /app/version && \
     ln -sf /usr/local/bin/gmake /usr/local/bin/make && \
