@@ -48,13 +48,13 @@ RUN SMOKEPING_TAG=$(fetch -qo - "${UPSTREAM_URL}" | \
     # Patch Makefile to skip thirdparty (like FreeBSD port does)
     sed -i '' 's/SUBDIRS = lib thirdparty/SUBDIRS = lib/' Makefile && \
     gmake install && \
-    # Fix permissions so bsd user can read libs
-    chmod -R o+rX /usr/local/smokeping && \
     # Copy .dist files to non-.dist names
     cd /usr/local/smokeping/etc && \
     cp smokemail.dist smokemail && \
     cp tmail.dist tmail && \
     cp basepage.html.dist basepage.html && \
+    # Fix permissions so bsd user can read libs (must be AFTER cp)
+    chmod -R o+rX /usr/local/smokeping && \
     # Create symlink for nginx config compatibility
     ln -sf /usr/local/smokeping/bin/smokeping_cgi /usr/local/bin/smokeping_cgi && \
     cd / && \
