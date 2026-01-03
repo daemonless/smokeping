@@ -57,6 +57,7 @@ RUN SMOKEPING_TAG=$(fetch -qo - "${UPSTREAM_URL}" | \
     chmod -R o+rX /usr/local/smokeping && \
     # Create symlink for nginx config compatibility
     ln -sf /usr/local/smokeping/bin/smokeping_cgi /usr/local/bin/smokeping_cgi && \
+    chmod u+s /usr/local/sbin/fping && \
     cd / && \
     rm -rf /tmp/smokeping*
 
