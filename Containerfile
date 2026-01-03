@@ -23,10 +23,14 @@ RUN pkg update && \
     pkg clean -ay && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 
-# Create required directories
+# Create required directories with proper permissions for traversal
 RUN mkdir -p /var/lib/smokeping/data /var/lib/smokeping/images \
              /var/run/smokeping /var/log/smokeping && \
-    chown -R bsd:bsd /var/lib/smokeping /var/run/smokeping /var/log/smokeping
+    chmod 755 /var/lib /var/lib/smokeping /var/lib/smokeping/data /var/lib/smokeping/images && \
+    chown -R bsd:bsd /var/lib/smokeping /var/run/smokeping /var/log/smokeping && \
+    # Create symlink for source-build path compatibility
+    mkdir -p /usr/local/smokeping && \
+    ln -sf /usr/local/etc/smokeping /usr/local/smokeping/etc
 
 # Copy configuration and service scripts
 COPY root/ /
