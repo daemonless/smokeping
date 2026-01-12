@@ -17,7 +17,7 @@ LABEL org.opencontainers.image.title="SmokePing" \
       org.opencontainers.image.vendor="daemonless" \
       org.opencontainers.image.authors="daemonless" \
       io.daemonless.category="Utilities" \
-      io.daemonless.port="8081" \
+      io.daemonless.port="80" \
       io.daemonless.volumes="/config,/data" \
       io.daemonless.arch="${FREEBSD_ARCH}" \
       io.daemonless.pkg-name="${PKG_NAME}" \
@@ -55,7 +55,7 @@ RUN mkdir -p /run/s6/services/smokeping /run/s6/services/fcgiwrap && \
     ln -sf /etc/services.d/fcgiwrap/run /run/s6/services/fcgiwrap/run
 
 # --- Expose (Injected by Generator) ---
-EXPOSE 8081
+EXPOSE 80
 
 # --- Volumes (Injected by Generator) ---
 VOLUME /config /data

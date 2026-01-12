@@ -17,9 +17,7 @@ LABEL org.opencontainers.image.title="{{ title }}" \
       org.opencontainers.image.vendor="daemonless" \
       org.opencontainers.image.authors="daemonless" \
       io.daemonless.category="{{ category }}" \
-{%- if ports %}
-      io.daemonless.port="{{ ports[0].port }}" \
-{%- endif %}
+      io.daemonless.port="80" \
 {%- if volumes %}
       io.daemonless.volumes="{{ volumes | map(attribute='path') | join(',') }}" \
 {%- endif %}
@@ -61,10 +59,8 @@ RUN mkdir -p /run/s6/services/smokeping /run/s6/services/fcgiwrap && \
     ln -sf /etc/services.d/smokeping/run /run/s6/services/smokeping/run && \
     ln -sf /etc/services.d/fcgiwrap/run /run/s6/services/fcgiwrap/run
 
-# --- Expose (Injected by Generator) ---
-{%- if ports %}
-EXPOSE {{ ports | map(attribute='port') | join(' ') }}
-{%- endif %}
+# --- Expose (nginx listens on 80) ---
+EXPOSE 80
 
 # --- Volumes (Injected by Generator) ---
 {%- if volumes %}
