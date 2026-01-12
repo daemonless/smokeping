@@ -8,17 +8,24 @@ ARG HEALTHCHECK_ENDPOINT="http://localhost:80/daemonless-ping"
 ENV HEALTHCHECK_URL="${HEALTHCHECK_ENDPOINT}"
 
 # --- Metadata (Injected by Generator) ---
-LABEL org.opencontainers.image.title="SmokePing" \
-      org.opencontainers.image.description="SmokePing network latency monitor on FreeBSD." \
-      org.opencontainers.image.source="https://github.com/daemonless/smokeping" \
-      org.opencontainers.image.url="https://oss.oetiker.ch/smokeping/" \
+LABEL org.opencontainers.image.title="{{ title }}" \
+      org.opencontainers.image.description="{{ description }}" \
+      org.opencontainers.image.source="{{ repo_url }}" \
+      org.opencontainers.image.url="{{ web_url }}" \
       org.opencontainers.image.documentation="https://oss.oetiker.ch/smokeping/doc/smokeping.en.html" \
       org.opencontainers.image.licenses="GPL-2.0-or-later" \
       org.opencontainers.image.vendor="daemonless" \
       org.opencontainers.image.authors="daemonless" \
-      io.daemonless.category="Utilities" \
-      io.daemonless.port="8081" \
-      io.daemonless.volumes="/config,/data" \
+      io.daemonless.category="{{ category }}" \
+{%- if ports %}
+      io.daemonless.port="{{ ports[0].port }}" \
+{%- endif %}
+{%- if volumes %}
+      io.daemonless.volumes="{{ volumes | map(attribute='path') | join(',') }}" \
+{%- endif %}
+{%- if mlock %}
+      org.freebsd.jail.allow.mlock="required" \
+{%- endif %}
       io.daemonless.arch="${FREEBSD_ARCH}" \
       io.daemonless.pkg-name="${PKG_NAME}" \
       io.daemonless.healthcheck-url="${HEALTHCHECK_ENDPOINT}"
@@ -55,7 +62,11 @@ RUN mkdir -p /run/s6/services/smokeping /run/s6/services/fcgiwrap && \
     ln -sf /etc/services.d/fcgiwrap/run /run/s6/services/fcgiwrap/run
 
 # --- Expose (Injected by Generator) ---
-EXPOSE 8081
+{%- if ports %}
+EXPOSE {{ ports | map(attribute='port') | join(' ') }}
+{%- endif %}
 
 # --- Volumes (Injected by Generator) ---
-VOLUME /config /data
+{%- if volumes %}
+VOLUME {{ volumes | map(attribute='path') | join(' ') }}
+{%- endif %}

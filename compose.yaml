@@ -1,0 +1,42 @@
+name: smokeping
+
+x-daemonless:
+  title: "SmokePing"
+  icon: ":material-pulse:"
+  category: "Utilities"
+  description: "SmokePing network latency monitor on FreeBSD."
+  upstream_url: "https://github.com/oetiker/smokeping"
+  web_url: "https://oss.oetiker.ch/smokeping/"
+  freshports_url: "https://www.freshports.org/net-mgmt/smokeping/"
+  user: "bsd"
+  mlock: false
+  upstream_binary: false
+  
+  docs:
+    env:
+      PUID: "User ID for the application process"
+      PGID: "Group ID for the application process"
+      TZ: "Timezone for the container"
+    volumes:
+      /config: "Configuration directory (Probes, Targets, etc.)"
+      /data: "Data directory (RRD database files)"
+    ports:
+      80: "Web UI"
+
+services:
+  smokeping:
+    image: ghcr.io/daemonless/smokeping:latest
+    container_name: smokeping
+    restart: unless-stopped
+    
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+
+    volumes:
+      - /path/to/containers/smokeping/config:/config
+      - /path/to/containers/smokeping/data:/data
+
+    ports:
+      - "8081:80"

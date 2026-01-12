@@ -1,88 +1,93 @@
-# smokeping
+# SmokePing
 
-Deluxe latency measurement tool.
+SmokePing network latency monitor on FreeBSD.
 
-## Environment Variables
+| | |
+|---|---|
+| **Port** | 8081 |
+| **Registry** | `ghcr.io/daemonless/smokeping` |
+| **Source** | [https://github.com/oetiker/smokeping](https://github.com/oetiker/smokeping) |
+| **Website** | [https://oss.oetiker.ch/smokeping/](https://oss.oetiker.ch/smokeping/) |
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `PUID` | User ID for the application process | `1000` |
-| `PGID` | Group ID for the application process | `1000` |
-| `TZ` | Timezone for the container | `UTC` |
-| `S6_LOG_ENABLE` | Enable/Disable file logging | `1` |
-| `S6_LOG_MAX_SIZE` | Max size per log file (bytes) | `1048576` |
-| `S6_LOG_MAX_FILES` | Number of rotated log files to keep | `10` |
+## Deployment
 
-## Logging
-
-This image uses `s6-log` for internal log rotation.
-- **System Logs**: Captured from console and stored at `/config/logs/daemonless/smokeping/`.
-- **Application Logs**: Managed by the app and typically found in `/config/logs/`.
-- **Podman Logs**: Output is mirrored to the console, so `podman logs` still works.
-
-## Quick Start
-
-```bash
-podman run -d --name smokeping \
-  --network=host \
-  -e PUID=1000 -e PGID=1000 \
-  -v /path/to/config:/config \
-  ghcr.io/daemonless/smokeping:latest
-```
-
-Access at: http://localhost:80/smokeping/smokeping.cgi
-
-## podman-compose
+### Podman Compose
 
 ```yaml
 services:
   smokeping:
     image: ghcr.io/daemonless/smokeping:latest
     container_name: smokeping
-    network_mode: host
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/New_York
+      - TZ=UTC
     volumes:
-      - /data/config/smokeping:/config
+      - /path/to/containers/smokeping:/config
+      - /path/to/data:/data
+    ports:
+      - 8081:8081
     restart: unless-stopped
 ```
 
-## Tags
+### Podman CLI
 
-| Tag | Source | Description |
-|-----|--------|-------------|
-| `:latest` | [Upstream Releases](https://github.com/oetiker/SmokePing) | Built from source |
-| `:pkg` | `net-mgmt/smokeping` | FreeBSD quarterly packages |
-| `:pkg-latest` | `net-mgmt/smokeping` | FreeBSD latest packages |
+```bash
+podman run -d --name smokeping \
+  -p 8081:8081 \
+  -e PUID=@PUID@ \
+  -e PGID=@PGID@ \
+  -e TZ=@TZ@ \
+  -v /path/to/containers/smokeping:/config \ 
+  -v /path/to/data:/data \ 
+  ghcr.io/daemonless/smokeping:latest
+```
+Access at: `http://localhost:8081`
 
-## Environment Variables
+### Ansible
+
+```yaml
+- name: Deploy smokeping
+  containers.podman.podman_container:
+    name: smokeping
+    image: ghcr.io/daemonless/smokeping:latest
+    state: started
+    restart_policy: always
+    env:
+      PUID: "1000"
+      PGID: "1000"
+      TZ: "UTC"
+    ports:
+      - "8081:8081"
+    volumes:
+      - "/path/to/containers/smokeping:/config"
+      - "/path/to/data:/data"
+```
+
+## Configuration
+
+### Environment Variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `PUID` | 1000 | User ID for app |
-| `PGID` | 1000 | Group ID for app |
-| `TZ` | UTC | Timezone |
+| `PUID` | `1000` | User ID for the application process |
+| `PGID` | `1000` | Group ID for the application process |
+| `TZ` | `UTC` | Timezone for the container |
 
-## Volumes
+### Volumes
 
 | Path | Description |
 |------|-------------|
-| `/config` | Configuration directory |
+| `/config` | Configuration directory (Probes, Targets, etc.) |
+| `/data` | Data directory (RRD database files) |
 
-## Ports
+### Ports
 
-| Port | Description |
-|------|-------------|
-| 80 | Web UI |
+| Port | Protocol | Description |
+|------|----------|-------------|
+| `8081` | TCP |  |
 
 ## Notes
 
-- **User:** `bsd` (UID/GID set via PUID/PGID, default 1000)
-- **Base:** Built on `ghcr.io/daemonless/nginx-base-image` (FreeBSD)
-
-## Links
-
-- [Website](https://oss.oetiker.ch/smokeping/)
-- [FreshPorts](https://www.freshports.org/net-mgmt/smokeping/)
+- **User:** `bsd` (UID/GID set via PUID/PGID)
+- **Base:** Built on `ghcr.io/daemonless/base` (FreeBSD)
