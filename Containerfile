@@ -54,7 +54,7 @@ RUN mkdir -p /run/s6/services/smokeping /run/s6/services/fcgiwrap && \
     ln -sf /etc/services.d/smokeping/run /run/s6/services/smokeping/run && \
     ln -sf /etc/services.d/fcgiwrap/run /run/s6/services/fcgiwrap/run
 
-# --- Expose (Injected by Generator) ---
+# --- Expose (nginx listens on 80) ---
 EXPOSE 80
 
 # --- Volumes (Injected by Generator) ---
