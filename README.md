@@ -11,6 +11,7 @@ SmokePing network latency monitor on FreeBSD.
 |---|---|
 | **Port** | 8081 |
 | **Registry** | `ghcr.io/daemonless/smokeping` |
+| **Docs** | [daemonless.io/images/smokeping](https://daemonless.io/images/smokeping/) |
 | **Source** | [https://github.com/oetiker/smokeping](https://github.com/oetiker/smokeping) |
 | **Website** | [https://oss.oetiker.ch/smokeping/](https://oss.oetiker.ch/smokeping/) |
 
