@@ -50,7 +50,7 @@ RUN mkdir -p /var/lib/smokeping/data /var/lib/smokeping/images \
 COPY root/ /
 
 # Use pkg service script
-RUN cp /etc/services.d/smokeping/run.pkg /etc/services.d/smokeping/run 2>/dev/null || true
+COPY root/etc/services.d/smokeping/run.pkg /etc/services.d/smokeping/run
 
 # Make scripts executable
 RUN chmod +x /etc/cont-init.d/* /etc/services.d/*/run 2>/dev/null || true
