@@ -1,11 +1,11 @@
 {
   "image": "smokeping",
-  "generated": "2026-02-01T22:45:14Z",
+  "generated": "2026-02-02T13:53:57Z",
   "tags": {
     "latest": {
       "app_version": "2.9.0_1",
       "source": "upstream-binary",
-      "generated": "2026-02-01T22:35:03Z",
+      "generated": "2026-02-02T13:53:39Z",
       "packages": {
         "freebsd": [
           {
