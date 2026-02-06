@@ -1,11 +1,12 @@
 {
   "image": "smokeping",
-  "generated": "2026-02-02T13:53:57Z",
+  "generated": "2026-02-06T00:08:30Z",
   "tags": {
     "latest": {
+      "arch": "amd64",
       "app_version": "2.9.0_1",
       "source": "upstream-binary",
-      "generated": "2026-02-02T13:53:39Z",
+      "generated": "2026-02-05T23:58:45Z",
       "packages": {
         "freebsd": [
           {
@@ -266,7 +267,7 @@
           },
           {
             "name": "libxml2",
-            "version": "2.14.6"
+            "version": "2.15.1"
           },
           {
             "name": "lzo2",
@@ -914,17 +915,26 @@
           }
         ],
         "dotnet": [],
-        "python": [],
+        "python": [
+          {
+            "name": "example",
+            "version": "21.12"
+          },
+          {
+            "name": "packaging",
+            "version": "25.0"
+          }
+        ],
         "node": [],
         "go": []
       },
       "summary": {
         "freebsd": 226,
         "dotnet": 0,
-        "python": 0,
+        "python": 2,
         "node": 0,
         "go": 0,
-        "total": 226
+        "total": 228
       }
     }
   }
