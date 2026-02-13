@@ -1,12 +1,12 @@
 {
   "image": "smokeping",
-  "generated": "2026-02-06T00:08:30Z",
+  "generated": "2026-02-13T12:20:56Z",
   "tags": {
     "latest": {
       "arch": "amd64",
       "app_version": "2.9.0_1",
-      "source": "upstream-binary",
-      "generated": "2026-02-05T23:58:45Z",
+      "source": "upstream",
+      "generated": "2026-02-13T12:20:36Z",
       "packages": {
         "freebsd": [
           {
@@ -15,7 +15,7 @@
           },
           {
             "name": "FreeBSD-blocklist",
-            "version": "15.0"
+            "version": "15.0p3"
           },
           {
             "name": "FreeBSD-bzip2-lib",
@@ -875,7 +875,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_1"
+            "version": "3.11.14_2"
           },
           {
             "name": "readline",
@@ -915,6 +915,10 @@
           }
         ],
         "dotnet": [],
+        "go": [],
+        "java": [],
+        "node": [],
+        "php": [],
         "python": [
           {
             "name": "example",
@@ -925,15 +929,19 @@
             "version": "25.0"
           }
         ],
-        "node": [],
-        "go": []
+        "ruby": [],
+        "rust": []
       },
       "summary": {
         "freebsd": 226,
         "dotnet": 0,
-        "python": 2,
-        "node": 0,
         "go": 0,
+        "java": 0,
+        "node": 0,
+        "php": 0,
+        "python": 2,
+        "ruby": 0,
+        "rust": 0,
         "total": 228
       }
     }
