@@ -4,14 +4,15 @@ x-daemonless:
   title: "SmokePing"
   icon: ":material-pulse:"
   category: "Utilities"
-  description: "SmokePing network latency monitor on FreeBSD."
+  description: "Network latency monitor with historical graphing — tracks round-trip times and packet loss to your hosts over time."
   upstream_url: "https://github.com/oetiker/smokeping"
   web_url: "https://oss.oetiker.ch/smokeping/"
   freshports_url: "https://www.freshports.org/net-mgmt/smokeping/"
   user: "bsd"
   mlock: false
   upstream_binary: false
-  
+  appjail: true
+
   docs:
     env:
       PUID: "User ID for the application process"
@@ -39,4 +40,4 @@ services:
       - /path/to/containers/smokeping/data:/data
 
     ports:
-      - "8081:80"
+      - "80:80"

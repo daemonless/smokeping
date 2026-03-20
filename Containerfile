@@ -15,7 +15,7 @@ ENV HEALTHCHECK_URL="${HEALTHCHECK_ENDPOINT}"
 
 # --- Metadata (Injected by Generator) ---
 LABEL org.opencontainers.image.title="SmokePing" \
-      org.opencontainers.image.description="SmokePing network latency monitor on FreeBSD." \
+      org.opencontainers.image.description="Network latency monitor with historical graphing — tracks round-trip times and packet loss to your hosts over time." \
       org.opencontainers.image.source="https://github.com/daemonless/smokeping" \
       org.opencontainers.image.url="https://oss.oetiker.ch/smokeping/" \
       org.opencontainers.image.documentation="https://oss.oetiker.ch/smokeping/doc/smokeping.en.html" \

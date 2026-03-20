@@ -5,15 +5,27 @@ Source: dbuild templates
 
 # SmokePing
 
-SmokePing network latency monitor on FreeBSD.
+[![Build Status](https://img.shields.io/github/actions/workflow/status/daemonless/smokeping/build.yaml?style=flat-square&label=Build&color=green)](https://github.com/daemonless/smokeping/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/daemonless/smokeping?style=flat-square&label=Last+Commit&color=blue)](https://github.com/daemonless/smokeping/commits)
+
+Network latency monitor with historical graphing — tracks round-trip times and packet loss to your hosts over time.
 
 | | |
 |---|---|
-| **Port** | 8081 |
+| **Port** | 80 |
 | **Registry** | `ghcr.io/daemonless/smokeping` |
-| **Docs** | [daemonless.io/images/smokeping](https://daemonless.io/images/smokeping/) |
 | **Source** | [https://github.com/oetiker/smokeping](https://github.com/oetiker/smokeping) |
 | **Website** | [https://oss.oetiker.ch/smokeping/](https://oss.oetiker.ch/smokeping/) |
+
+## Version Tags
+
+| Tag | Description | Best For |
+| :--- | :--- | :--- |
+| `latest` | **FreeBSD Port**. Built from latest FreeBSD packages. | Most users. Matches Linux Docker behavior. |
+
+## Prerequisites
+
+Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
 
 ## Deployment
 
@@ -29,26 +41,72 @@ services:
       - PGID=1000
       - TZ=UTC
     volumes:
-      - /path/to/containers/smokeping:/config
-      - /path/to/data:/data
+      - "/path/to/containers/smokeping:/config"
+      - "/path/to/containers/smokeping/data:/data"
     ports:
-      - 8081:8081
+      - 80:80
     restart: unless-stopped
+```
+
+### AppJail Director
+
+**.env**:
+
+```
+DIRECTOR_PROJECT=smokeping
+PUID=1000
+PGID=1000
+TZ=UTC
+```
+
+**appjail-director.yml**:
+
+```yaml
+options:
+  - virtualnet: ':<random> default'
+  - nat:
+services:
+  smokeping:
+    name: smokeping
+    options:
+      - container: 'boot args:--pull'
+    oci:
+      user: root
+      environment:
+        - PUID: !ENV '${PUID}'
+        - PGID: !ENV '${PGID}'
+        - TZ: !ENV '${TZ}'
+    volumes:
+      - smokeping: /config
+      - smokeping_data: /data
+volumes:
+  smokeping:
+    device: '/path/to/containers/smokeping'
+  smokeping_data:
+    device: '/path/to/containers/smokeping/data'
+```
+
+**Makejail**:
+
+```
+ARG tag=latest
+
+OPTION overwrite=force
+OPTION from=ghcr.io/daemonless/smokeping:${tag}
 ```
 
 ### Podman CLI
 
 ```bash
 podman run -d --name smokeping \
-  -p 8081:8081 \
-  -e PUID=@PUID@ \
-  -e PGID=@PGID@ \
-  -e TZ=@TZ@ \
+  -p 80:80 \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=UTC \
   -v /path/to/containers/smokeping:/config \
-  -v /path/to/data:/data \
+  -v /path/to/containers/smokeping/data:/data \
   ghcr.io/daemonless/smokeping:latest
 ```
-Access at: `http://localhost:8081`
 
 ### Ansible
 
@@ -60,17 +118,20 @@ Access at: `http://localhost:8081`
     state: started
     restart_policy: always
     env:
-      PUID: "@PUID@"
-      PGID: "@PGID@"
-      TZ: "@TZ@"
+      PUID: "1000"
+      PGID: "1000"
+      TZ: "UTC"
     ports:
-      - "8081:8081"
+      - "80:80"
     volumes:
       - "/path/to/containers/smokeping:/config"
-      - "/path/to/data:/data"
+      - "/path/to/containers/smokeping/data:/data"
 ```
 
-## Configuration
+Access at: `http://localhost:80`
+
+## Parameters
+
 ### Environment Variables
 
 | Variable | Default | Description |
@@ -78,20 +139,24 @@ Access at: `http://localhost:8081`
 | `PUID` | `1000` | User ID for the application process |
 | `PGID` | `1000` | Group ID for the application process |
 | `TZ` | `UTC` | Timezone for the container |
+
 ### Volumes
 
 | Path | Description |
 |------|-------------|
 | `/config` | Configuration directory (Probes, Targets, etc.) |
 | `/data` | Data directory (RRD database files) |
+
 ### Ports
 
 | Port | Protocol | Description |
 |------|----------|-------------|
-| `8081` | TCP |  |
+| `80` | TCP | Web UI |
 
-## Notes
+**Architectures:** amd64
+**User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
+**Base:** FreeBSD 15.0
 
-- **Architectures:** amd64
-- **User:** `bsd` (UID/GID set via PUID/PGID)
-- **Base:** Built on `ghcr.io/daemonless/base` (FreeBSD)
+---
+
+Need help? Join our [Discord](https://discord.gg/Kb9tkhecZT) community.
