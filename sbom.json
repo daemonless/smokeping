@@ -1,12 +1,12 @@
 {
   "image": "smokeping",
-  "generated": "2026-03-20T10:52:49Z",
+  "generated": "2026-03-28T16:43:20Z",
   "tags": {
     "latest": {
       "arch": "amd64",
       "app_version": "2.9.0_1",
       "source": "upstream",
-      "generated": "2026-03-20T10:52:31Z",
+      "generated": "2026-03-28T16:42:50Z",
       "packages": {
         "freebsd": [
           {
@@ -128,6 +128,10 @@
           {
             "name": "brotli",
             "version": "1.2.0,1"
+          },
+          {
+            "name": "ca_root_nss",
+            "version": "3.117_2"
           },
           {
             "name": "cairo",
@@ -933,7 +937,7 @@
         "rust": []
       },
       "summary": {
-        "freebsd": 226,
+        "freebsd": 227,
         "dotnet": 0,
         "go": 0,
         "java": 0,
@@ -942,7 +946,7 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 228
+        "total": 229
       }
     }
   }
