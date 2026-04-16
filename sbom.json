@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-05T20:09:48Z",
+  "generated": "2026-04-16T18:37:35Z",
   "image": "smokeping",
   "tags": {
     "latest": {
       "app_version": "2.9.0_1",
       "arch": "amd64",
-      "generated": "2026-04-05T20:08:32Z",
+      "generated": "2026-04-16T18:36:15Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -139,11 +139,11 @@
           },
           {
             "name": "curl",
-            "version": "8.17.0"
+            "version": "8.19.0_1"
           },
           {
             "name": "dejavu",
-            "version": "2.37_3"
+            "version": "2.37_4"
           },
           {
             "name": "execline",
@@ -151,7 +151,7 @@
           },
           {
             "name": "expat",
-            "version": "2.7.4"
+            "version": "2.7.5"
           },
           {
             "name": "fcgi-devkit",
@@ -167,11 +167,11 @@
           },
           {
             "name": "fping",
-            "version": "5.3"
+            "version": "5.5"
           },
           {
             "name": "freetype2",
-            "version": "2.14.1"
+            "version": "2.14.3"
           },
           {
             "name": "fribidi",
@@ -179,7 +179,7 @@
           },
           {
             "name": "gettext-runtime",
-            "version": "0.26"
+            "version": "1.0"
           },
           {
             "name": "glib",
@@ -191,7 +191,7 @@
           },
           {
             "name": "harfbuzz",
-            "version": "12.3.0"
+            "version": "13.2.1"
           },
           {
             "name": "indexinfo",
@@ -203,7 +203,7 @@
           },
           {
             "name": "libX11",
-            "version": "1.8.12,1"
+            "version": "1.8.13,1"
           },
           {
             "name": "libXau",
@@ -235,7 +235,7 @@
           },
           {
             "name": "libfontenc",
-            "version": "1.1.8"
+            "version": "1.1.9"
           },
           {
             "name": "libiconv",
@@ -263,7 +263,7 @@
           },
           {
             "name": "libunistring",
-            "version": "1.4.1"
+            "version": "1.4.2"
           },
           {
             "name": "libxcb",
@@ -451,7 +451,7 @@
           },
           {
             "name": "p5-Getopt-Long-Descriptive",
-            "version": "0.116"
+            "version": "0.117"
           },
           {
             "name": "p5-HTML-Parser",
@@ -495,7 +495,7 @@
           },
           {
             "name": "p5-IO-Socket-SSL",
-            "version": "2.095"
+            "version": "2.098"
           },
           {
             "name": "p5-IO-Tty",
@@ -547,7 +547,7 @@
           },
           {
             "name": "p5-MetaCPAN-Client",
-            "version": "2.034000"
+            "version": "2.038000"
           },
           {
             "name": "p5-Module-Implementation",
@@ -723,7 +723,7 @@
           },
           {
             "name": "p5-TimeDate",
-            "version": "2.33,1"
+            "version": "2.35,1"
           },
           {
             "name": "p5-Try-Tiny",
@@ -731,7 +731,7 @@
           },
           {
             "name": "p5-Type-Tiny",
-            "version": "2.008006"
+            "version": "2.010001"
           },
           {
             "name": "p5-Type-Tiny-XS",
@@ -851,7 +851,7 @@
           },
           {
             "name": "pango",
-            "version": "1.56.4"
+            "version": "1.56.4_1"
           },
           {
             "name": "pcre2",
@@ -867,19 +867,19 @@
           },
           {
             "name": "pkg",
-            "version": "2.5.1"
+            "version": "2.6.2_1"
           },
           {
             "name": "png",
-            "version": "1.6.53"
+            "version": "1.6.57"
           },
           {
             "name": "py311-packaging",
-            "version": "25.0"
+            "version": "26.0"
           },
           {
             "name": "python311",
-            "version": "3.11.15"
+            "version": "3.11.15_2"
           },
           {
             "name": "readline",
@@ -929,7 +929,7 @@
           },
           {
             "name": "packaging",
-            "version": "25.0"
+            "version": "26.0"
           }
         ],
         "ruby": [],
