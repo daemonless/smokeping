@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-16T18:37:35Z",
+  "generated": "2026-04-30T07:06:26Z",
   "image": "smokeping",
   "tags": {
     "latest": {
       "app_version": "2.9.0_1",
       "arch": "amd64",
-      "generated": "2026-04-16T18:36:15Z",
+      "generated": "2026-04-30T07:05:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -79,11 +79,11 @@
           },
           {
             "name": "FreeBSD-openssl",
-            "version": "15.0"
+            "version": "15.0p2"
           },
           {
             "name": "FreeBSD-openssl-lib",
-            "version": "15.0"
+            "version": "15.0p2"
           },
           {
             "name": "FreeBSD-pkg-bootstrap",
@@ -95,7 +95,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0"
+            "version": "15.0p6"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -147,7 +147,7 @@
           },
           {
             "name": "execline",
-            "version": "2.9.7.0"
+            "version": "2.9.8.1"
           },
           {
             "name": "expat",
@@ -247,7 +247,7 @@
           },
           {
             "name": "libnghttp2",
-            "version": "1.68.0"
+            "version": "1.68.1"
           },
           {
             "name": "libpsl",
@@ -287,7 +287,7 @@
           },
           {
             "name": "nginx",
-            "version": "1.28.0_10,3"
+            "version": "1.28.3,3"
           },
           {
             "name": "oniguruma",
@@ -891,15 +891,11 @@
           },
           {
             "name": "s6",
-            "version": "2.13.2.0"
-          },
-          {
-            "name": "s6-rc",
-            "version": "0.5.6.0"
+            "version": "2.14.0.1"
           },
           {
             "name": "skalibs",
-            "version": "2.14.4.0"
+            "version": "2.14.5.1"
           },
           {
             "name": "smokeping",
@@ -938,7 +934,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 227,
+        "freebsd": 226,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -946,7 +942,7 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 229
+        "total": 228
       }
     }
   }
