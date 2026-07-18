@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-07T08:53:07Z",
+  "generated": "2026-07-18T09:45:15Z",
   "image": "smokeping",
   "tags": {
     "latest": {
       "app_version": "2.9.0_1",
       "arch": "amd64",
-      "generated": "2026-07-07T08:51:50Z",
+      "generated": "2026-07-18T09:43:58Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -139,7 +139,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "cairo",
@@ -159,7 +159,7 @@
           },
           {
             "name": "expat",
-            "version": "2.8.1"
+            "version": "2.8.2"
           },
           {
             "name": "fcgi-devkit",
@@ -187,19 +187,19 @@
           },
           {
             "name": "gettext-runtime",
-            "version": "1.0"
+            "version": "1.0_1"
           },
           {
             "name": "glib",
-            "version": "2.84.4,2"
+            "version": "2.86.4,2"
           },
           {
             "name": "graphite2",
-            "version": "1.3.14"
+            "version": "1.3.15"
           },
           {
             "name": "harfbuzz",
-            "version": "13.2.1"
+            "version": "14.2.1"
           },
           {
             "name": "indexinfo",
@@ -207,11 +207,11 @@
           },
           {
             "name": "jq",
-            "version": "1.8.1"
+            "version": "1.8.2"
           },
           {
             "name": "libX11",
-            "version": "1.8.13,1"
+            "version": "1.8.13_1,1"
           },
           {
             "name": "libXau",
@@ -223,7 +223,7 @@
           },
           {
             "name": "libXext",
-            "version": "1.3.6,1"
+            "version": "1.3.7,1"
           },
           {
             "name": "libXft",
@@ -239,7 +239,7 @@
           },
           {
             "name": "libffi",
-            "version": "3.5.1"
+            "version": "3.6.0"
           },
           {
             "name": "libfontenc",
@@ -254,16 +254,20 @@
             "version": "2.3.8"
           },
           {
+            "name": "liblz4",
+            "version": "1.10.0_2,1"
+          },
+          {
             "name": "libnghttp2",
-            "version": "1.68.1"
+            "version": "1.69.0"
           },
           {
             "name": "libpsl",
-            "version": "0.21.5_2"
+            "version": "0.22.0"
           },
           {
             "name": "libssh2",
-            "version": "1.11.1,3"
+            "version": "1.11.1_1,3"
           },
           {
             "name": "libthai",
@@ -279,15 +283,15 @@
           },
           {
             "name": "libxml2",
-            "version": "2.15.2"
+            "version": "2.15.3"
           },
           {
             "name": "lzo2",
-            "version": "2.10_1"
+            "version": "2.10_2"
           },
           {
             "name": "mkfontscale",
-            "version": "1.2.3"
+            "version": "1.2.4"
           },
           {
             "name": "mpdecimal",
@@ -295,7 +299,7 @@
           },
           {
             "name": "nginx",
-            "version": "1.30.3,3"
+            "version": "1.30.3_2,3"
           },
           {
             "name": "oniguruma",
@@ -327,7 +331,7 @@
           },
           {
             "name": "p5-CGI",
-            "version": "4.71"
+            "version": "4.72"
           },
           {
             "name": "p5-CGI-Fast",
@@ -335,7 +339,7 @@
           },
           {
             "name": "p5-CGI-Session",
-            "version": "4.48_1"
+            "version": "4.49"
           },
           {
             "name": "p5-CPAN-DistnameInfo",
@@ -355,7 +359,7 @@
           },
           {
             "name": "p5-Clone",
-            "version": "0.47"
+            "version": "0.50"
           },
           {
             "name": "p5-Clone-Choose",
@@ -383,11 +387,15 @@
           },
           {
             "name": "p5-Cpanel-JSON-XS",
-            "version": "4.40"
+            "version": "4.42"
           },
           {
             "name": "p5-Crypt-DES",
-            "version": "2.07_2"
+            "version": "2.07_3"
+          },
+          {
+            "name": "p5-Crypt-SysRandom",
+            "version": "0.007"
           },
           {
             "name": "p5-Crypt-URandom",
@@ -427,7 +435,7 @@
           },
           {
             "name": "p5-Exporter-Tiny",
-            "version": "1.006002"
+            "version": "1.006003"
           },
           {
             "name": "p5-FCGI",
@@ -503,7 +511,7 @@
           },
           {
             "name": "p5-IO-Socket-SSL",
-            "version": "2.098"
+            "version": "2.099"
           },
           {
             "name": "p5-IO-Tty",
@@ -523,7 +531,7 @@
           },
           {
             "name": "p5-LWP-Protocol-https",
-            "version": "6.14"
+            "version": "6.15"
           },
           {
             "name": "p5-List-Compare",
@@ -555,7 +563,7 @@
           },
           {
             "name": "p5-MetaCPAN-Client",
-            "version": "2.038000"
+            "version": "2.044000"
           },
           {
             "name": "p5-Module-Implementation",
@@ -563,7 +571,7 @@
           },
           {
             "name": "p5-Module-Pluggable",
-            "version": "5.2"
+            "version": "6.3"
           },
           {
             "name": "p5-Module-Runtime",
@@ -599,7 +607,7 @@
           },
           {
             "name": "p5-Net-DNS",
-            "version": "1.53,1"
+            "version": "1.55,1"
           },
           {
             "name": "p5-Net-HTTP",
@@ -683,7 +691,7 @@
           },
           {
             "name": "p5-Role-Tiny",
-            "version": "2.002004"
+            "version": "2.002005"
           },
           {
             "name": "p5-SNMP_Session",
@@ -823,7 +831,7 @@
           },
           {
             "name": "p5-YAML-LibYAML",
-            "version": "0.90"
+            "version": "0.908.0"
           },
           {
             "name": "p5-bareword-filehandles",
@@ -835,7 +843,7 @@
           },
           {
             "name": "p5-libwww",
-            "version": "6.81"
+            "version": "6.83"
           },
           {
             "name": "p5-local-lib",
@@ -859,7 +867,7 @@
           },
           {
             "name": "pango",
-            "version": "1.56.4_1"
+            "version": "1.57.1"
           },
           {
             "name": "pcre2",
@@ -871,23 +879,23 @@
           },
           {
             "name": "pixman",
-            "version": "0.46.2"
+            "version": "0.46.4"
           },
           {
             "name": "pkg",
-            "version": "2.6.2_1"
+            "version": "2.7.5"
           },
           {
             "name": "png",
-            "version": "1.6.57"
+            "version": "1.6.58"
           },
           {
-            "name": "py311-packaging",
-            "version": "26.0"
+            "name": "py312-packaging",
+            "version": "26.2"
           },
           {
-            "name": "python311",
-            "version": "3.11.15_4"
+            "name": "python312",
+            "version": "3.12.13_3"
           },
           {
             "name": "readline",
@@ -895,7 +903,7 @@
           },
           {
             "name": "rrdtool",
-            "version": "1.9.0_2"
+            "version": "1.10.3"
           },
           {
             "name": "s6",
@@ -915,11 +923,11 @@
           },
           {
             "name": "xorgproto",
-            "version": "2024.1"
+            "version": "2025.1"
           },
           {
             "name": "zstd",
-            "version": "1.5.7_1"
+            "version": "1.5.7_2"
           }
         ],
         "go": [],
@@ -933,7 +941,7 @@
           },
           {
             "name": "packaging",
-            "version": "26.0"
+            "version": "26.2"
           }
         ],
         "ruby": [],
@@ -942,7 +950,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 228,
+        "freebsd": 230,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -950,7 +958,7 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 230
+        "total": 232
       }
     }
   }
