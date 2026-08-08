@@ -29,7 +29,7 @@ services:
     image: ghcr.io/daemonless/smokeping:latest
     container_name: smokeping
     restart: unless-stopped
-    
+
     environment:
       - PUID=1000
       - PGID=1000
