@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-01T20:17:44Z",
+  "generated": "2026-08-08T12:04:28Z",
   "image": "smokeping",
   "tags": {
     "latest": {
       "app_version": "2.9.0_1",
       "arch": "amd64",
-      "generated": "2026-08-01T20:09:37Z",
+      "generated": "2026-08-08T12:02:27Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1660,7 +1660,7 @@
               "GPLv1+"
             ],
             "name": "perl5",
-            "version": "5.42.2"
+            "version": "5.42.3"
           },
           {
             "licenses": [
