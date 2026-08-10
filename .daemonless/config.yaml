@@ -5,6 +5,7 @@ build:
     - aarch64
   variants:
     - tag: latest
+      aliases: ["pkg-latest"]
       containerfile: Containerfile
       default: true
       args:
