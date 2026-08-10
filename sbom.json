@@ -1,11 +1,1795 @@
 {
-  "generated": "2026-08-10T07:32:00Z",
+  "generated": "2026-08-10T20:38:28Z",
   "image": "smokeping",
   "tags": {
-    "latest": {
+    "pkg-amd64": {
+      "app_version": "2.9.0_1",
+      "arch": "amd64",
+      "generated": "2026-08-10T20:36:31Z",
+      "packages": {
+        "dotnet": [],
+        "freebsd": [
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-audit-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-blocklist",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-bzip2-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-certctl",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-clibs",
+            "version": "15.1p2"
+          },
+          {
+            "licenses": [
+              "CDDL-1.0"
+            ],
+            "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-fetch",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-kerberos-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libarchive",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libbsdstat",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libcasper",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libcompiler_rt-dev",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libexecinfo",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libldns",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libmagic",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-locales",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-mtree",
+            "version": "15.1p2"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-ncurses-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-openssl",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-openssl-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-pam-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-pkg-bootstrap",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-rc",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-runtime",
+            "version": "15.1p2"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-tcpd",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-ufs-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-utilities",
+            "version": "15.1p2"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-xz-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "CDDL-1.0"
+            ],
+            "name": "FreeBSD-zfs-lib",
+            "version": "15.1p1"
+          },
+          {
+            "licenses": [
+              "Zlib"
+            ],
+            "name": "FreeBSD-zlib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "PD"
+            ],
+            "name": "FreeBSD-zoneinfo",
+            "version": "15.1p2"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-zstd-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "brotli",
+            "version": "1.2.0,1"
+          },
+          {
+            "licenses": [
+              "MPL20"
+            ],
+            "name": "ca_root_nss",
+            "version": "3.125"
+          },
+          {
+            "licenses": [
+              "LGPL21",
+              "MPL11"
+            ],
+            "name": "cairo",
+            "version": "1.18.2,3"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "curl",
+            "version": "8.21.0"
+          },
+          {
+            "licenses": [
+              "AMS",
+              "AREV",
+              "BITSTREAM"
+            ],
+            "name": "dejavu",
+            "version": "2.37_4"
+          },
+          {
+            "licenses": [
+              "ISCL"
+            ],
+            "name": "execline",
+            "version": "2.9.8.1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "expat",
+            "version": "2.8.2"
+          },
+          {
+            "licenses": [
+              "Open_Market_FastCGI_license"
+            ],
+            "name": "fcgi-devkit",
+            "version": "2.4.7"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "fcgiwrap",
+            "version": "1.1.0_12"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "fontconfig",
+            "version": "2.17.1,1"
+          },
+          {
+            "licenses": [
+              "PreviousBSD"
+            ],
+            "name": "fping",
+            "version": "5.5"
+          },
+          {
+            "licenses": [
+              "GPLv2+",
+              "FTL"
+            ],
+            "name": "freetype2",
+            "version": "2.14.3"
+          },
+          {
+            "licenses": [
+              "LGPL21"
+            ],
+            "name": "fribidi",
+            "version": "1.0.16"
+          },
+          {
+            "licenses": [
+              "GPLv3+",
+              "LGPL21+"
+            ],
+            "name": "gettext-runtime",
+            "version": "1.0_1"
+          },
+          {
+            "licenses": [
+              "LGPL20"
+            ],
+            "name": "glib",
+            "version": "2.86.4,2"
+          },
+          {
+            "licenses": [
+              "MPL20",
+              "LGPL21",
+              "GPLv2"
+            ],
+            "name": "graphite2",
+            "version": "1.3.15"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "harfbuzz",
+            "version": "14.2.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "indexinfo",
+            "version": "0.3.1_1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "jq",
+            "version": "1.8.2"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libX11",
+            "version": "1.8.13_1,1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libXau",
+            "version": "1.0.12"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libXdmcp",
+            "version": "1.1.5"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libXext",
+            "version": "1.3.7,1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libXft",
+            "version": "2.3.8"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libXrender",
+            "version": "0.9.12"
+          },
+          {
+            "licenses": [
+              "LGPL21+"
+            ],
+            "name": "libdatrie",
+            "version": "0.2.14_1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libffi",
+            "version": "3.6.0"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libfontenc",
+            "version": "1.1.9"
+          },
+          {
+            "licenses": [
+              "GPLv3"
+            ],
+            "name": "libiconv",
+            "version": "1.18_1"
+          },
+          {
+            "licenses": [
+              "GPLv3"
+            ],
+            "name": "libidn2",
+            "version": "2.3.8"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE",
+              "GPLv2"
+            ],
+            "name": "liblz4",
+            "version": "1.10.0_2,1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libnghttp2",
+            "version": "1.69.0"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libpsl",
+            "version": "0.22.0"
+          },
+          {
+            "licenses": [
+              "BSD3CLAUSE"
+            ],
+            "name": "libssh2",
+            "version": "1.11.1_1,3"
+          },
+          {
+            "licenses": [
+              "LGPL21+"
+            ],
+            "name": "libthai",
+            "version": "0.1.30"
+          },
+          {
+            "licenses": [
+              "GPLv2",
+              "GFDL",
+              "LGPL3+"
+            ],
+            "name": "libunistring",
+            "version": "1.4.2"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libxcb",
+            "version": "1.17.0"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "libxml2",
+            "version": "2.15.3"
+          },
+          {
+            "licenses": [
+              "GPLv2"
+            ],
+            "name": "lzo2",
+            "version": "2.10_2"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "mkfontscale",
+            "version": "1.2.4"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "mpdecimal",
+            "version": "4.0.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "nginx",
+            "version": "1.30.4,3"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "oniguruma",
+            "version": "6.9.10"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Algorithm-C3",
+            "version": "0.11"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Archive-Extract",
+            "version": "0.88"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Authen-NTLM",
+            "version": "1.09_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Authen-SASL",
+            "version": "2.1900"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-B-Hooks-EndOfScope",
+            "version": "0.28"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-B-Hooks-OP-Check",
+            "version": "0.22"
+          },
+          {
+            "licenses": [
+              "ART20"
+            ],
+            "name": "p5-CGI",
+            "version": "4.72"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-CGI-Fast",
+            "version": "2.17"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-CGI-Session",
+            "version": "4.49"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-CPAN-DistnameInfo",
+            "version": "0.12_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Class-C3",
+            "version": "0.35"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Class-Method-Modifiers",
+            "version": "2.15"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Class-XSAccessor",
+            "version": "1.19_2,1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Clone",
+            "version": "0.50"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Clone-Choose",
+            "version": "0.010"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Config-Any",
+            "version": "0.33"
+          },
+          {
+            "licenses": [
+              "ART20"
+            ],
+            "name": "p5-Config-General",
+            "version": "2.67"
+          },
+          {
+            "name": "p5-Config-Grammar",
+            "version": "1.10_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Config-Tiny",
+            "version": "2.30"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Convert-ASN1",
+            "version": "0.34"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Cpanel-JSON-XS",
+            "version": "4.42"
+          },
+          {
+            "licenses": [
+              "BSD3CLAUSE"
+            ],
+            "name": "p5-Crypt-DES",
+            "version": "2.07_3"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Crypt-SysRandom",
+            "version": "0.007"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Crypt-URandom",
+            "version": "0.54"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Data-OptList",
+            "version": "0.114"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Data-Record",
+            "version": "0.02_2"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Devel-Hide",
+            "version": "0.0015"
+          },
+          {
+            "licenses": [
+              "ART20"
+            ],
+            "name": "p5-Devel-StackTrace",
+            "version": "2.05"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Digest-HMAC",
+            "version": "1.05"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Digest-SHA1",
+            "version": "2.13_2"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Dist-CheckConflicts",
+            "version": "0.11_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Encode-Locale",
+            "version": "1.05"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Exporter-Tiny",
+            "version": "1.006003"
+          },
+          {
+            "licenses": [
+              "OpenMarket"
+            ],
+            "name": "p5-FCGI",
+            "version": "0.82"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-File-ConfigDir",
+            "version": "0.021"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-File-Find-Rule",
+            "version": "0.35"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-File-HomeDir",
+            "version": "1.006"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-File-Listing",
+            "version": "6.16"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-File-Which",
+            "version": "1.27"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv2+"
+            ],
+            "name": "p5-Getopt-Long",
+            "version": "2.58"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Getopt-Long-Descriptive",
+            "version": "0.117"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-HTML-Parser",
+            "version": "3.83"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-HTML-Tagset",
+            "version": "3.24"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-HTTP-Cookies",
+            "version": "6.11"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-HTTP-Date",
+            "version": "6.06"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-HTTP-Message",
+            "version": "7.01"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-HTTP-Negotiate",
+            "version": "6.01_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Hash-Merge",
+            "version": "0.302"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-IO-File-AtomicChange",
+            "version": "0.08"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-IO-HTML",
+            "version": "1.004"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-IO-Pty-Easy",
+            "version": "0.10"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-IO-Socket-SSL",
+            "version": "2.099"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-IO-Tty",
+            "version": "1.20_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-JSON",
+            "version": "4.10"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-JSON-MaybeXS",
+            "version": "1.004008"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-LWP-MediaTypes",
+            "version": "6.04"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-LWP-Protocol-https",
+            "version": "6.15"
+          },
+          {
+            "licenses": [
+              "ART10"
+            ],
+            "name": "p5-List-Compare",
+            "version": "0.53"
+          },
+          {
+            "licenses": [
+              "APACHE20"
+            ],
+            "name": "p5-List-MoreUtils",
+            "version": "0.430"
+          },
+          {
+            "licenses": [
+              "APACHE20"
+            ],
+            "name": "p5-List-MoreUtils-XS",
+            "version": "0.430"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MIME-Base32",
+            "version": "1.303"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MIME-Base64",
+            "version": "3.16"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MIME-Charset",
+            "version": "1.012.2"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MRO-Compat",
+            "version": "0.15"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MetaCPAN-Client",
+            "version": "2.044000"
+          },
+          {
+            "licenses": [
+              "ART20"
+            ],
+            "name": "p5-Module-Implementation",
+            "version": "0.09_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Module-Pluggable",
+            "version": "6.3"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Module-Runtime",
+            "version": "0.018"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Moo",
+            "version": "2.005005"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MooX-ConfigFromFile",
+            "version": "0.009"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MooX-File-ConfigDir",
+            "version": "0.008"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MooX-Locale-Passthrough",
+            "version": "0.001"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MooX-Options",
+            "version": "4.103"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-MooX-StrictConstructor",
+            "version": "0.013"
+          },
+          {
+            "licenses": [
+              "MPL20"
+            ],
+            "name": "p5-Mozilla-CA",
+            "version": "20250602"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "p5-Net-DNS",
+            "version": "1.55,1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Net-HTTP",
+            "version": "6.24"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Net-OpenSSH",
+            "version": "0.84"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Net-SNMP",
+            "version": "6.0.1_1"
+          },
+          {
+            "licenses": [
+              "OpenSSL"
+            ],
+            "name": "p5-Net-SSLeay",
+            "version": "1.94"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Net-Telnet",
+            "version": "3.05"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Number-Compare",
+            "version": "0.03_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-OrePAN2",
+            "version": "0.53"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Package-Stash",
+            "version": "0.40"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Package-Stash-XS",
+            "version": "0.30"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Params-Util",
+            "version": "1.102"
+          },
+          {
+            "licenses": [
+              "ART20"
+            ],
+            "name": "p5-Params-Validate",
+            "version": "1.31"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Parse-CPAN-Packages-Fast",
+            "version": "0.09"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Parse-LocalDistribution",
+            "version": "0.20"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Parse-PMFile",
+            "version": "0.47"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Path-Class",
+            "version": "0.37"
+          },
+          {
+            "licenses": [
+              "APACHE20"
+            ],
+            "name": "p5-Path-Tiny",
+            "version": "0.150"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "p5-Ref-Util",
+            "version": "0.204"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "p5-Ref-Util-XS",
+            "version": "0.117"
+          },
+          {
+            "licenses": [
+              "MIT",
+              "BSD3CLAUSE",
+              "ART10",
+              "ART20"
+            ],
+            "name": "p5-Regexp-Common",
+            "version": "2024080801"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Role-Hooks",
+            "version": "0.008"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Role-Tiny",
+            "version": "2.002005"
+          },
+          {
+            "name": "p5-SNMP_Session",
+            "version": "1.13_4"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Safe-Isa",
+            "version": "1.000010"
+          },
+          {
+            "licenses": [
+              "BSD3CLAUSE"
+            ],
+            "name": "p5-Socket6",
+            "version": "0.29"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Sub-Exporter",
+            "version": "0.991"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Sub-Exporter-Progressive",
+            "version": "0.001013"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Sub-Install",
+            "version": "0.929"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Sub-Quote",
+            "version": "2.006009"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Term-Size-Any",
+            "version": "0.002_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Term-Size-Perl",
+            "version": "0.031"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Text-Glob",
+            "version": "0.11"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Text-Soundex",
+            "version": "3.05"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-TimeDate",
+            "version": "2.35,1"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "p5-Try-Tiny",
+            "version": "0.32"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Type-Tiny",
+            "version": "2.010001"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Type-Tiny-XS",
+            "version": "0.025"
+          },
+          {
+            "licenses": [
+              "APACHE20"
+            ],
+            "name": "p5-Types-Path-Tiny",
+            "version": "0.006"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Types-Self",
+            "version": "0.002_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Types-URI",
+            "version": "0.007"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Types-UUID",
+            "version": "0.004"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-URI",
+            "version": "5.34"
+          },
+          {
+            "licenses": [
+              "ART20"
+            ],
+            "name": "p5-URI-FromHash",
+            "version": "0.05"
+          },
+          {
+            "name": "p5-UUID-Tiny",
+            "version": "1.04_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Unicode-LineBreak",
+            "version": "2019.001"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-Variable-Magic",
+            "version": "0.64"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-WWW-RobotRules",
+            "version": "6.02_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-XML-Filter-BufferText",
+            "version": "1.01_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-XML-NamespaceSupport",
+            "version": "1.12"
+          },
+          {
+            "licenses": [
+              "ART20"
+            ],
+            "name": "p5-XML-Parser",
+            "version": "2.47"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-XML-SAX",
+            "version": "1.02"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-XML-SAX-Base",
+            "version": "1.09"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-XML-SAX-Expat",
+            "version": "0.51_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-XML-SAX-Writer",
+            "version": "0.57"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-XML-Simple",
+            "version": "2.25"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-XString",
+            "version": "0.005"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-YAML-LibYAML",
+            "version": "0.908.0"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-bareword-filehandles",
+            "version": "0.007"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-indirect",
+            "version": "0.39"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-libwww",
+            "version": "6.83"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-local-lib",
+            "version": "2.000029"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-multidimensional",
+            "version": "0.014"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-namespace-clean",
+            "version": "0.27"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-perl-ldap",
+            "version": "0.6800"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "p5-strictures",
+            "version": "2.000006,1"
+          },
+          {
+            "licenses": [
+              "LGPL21+"
+            ],
+            "name": "pango",
+            "version": "1.57.1"
+          },
+          {
+            "licenses": [
+              "BSD3CLAUSE"
+            ],
+            "name": "pcre2",
+            "version": "10.47_1"
+          },
+          {
+            "licenses": [
+              "ART10",
+              "GPLv1+"
+            ],
+            "name": "perl5",
+            "version": "5.42.3"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "pixman",
+            "version": "0.46.4"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "pkg",
+            "version": "2.7.5"
+          },
+          {
+            "licenses": [
+              "Libpng"
+            ],
+            "name": "png",
+            "version": "1.6.58"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE",
+              "APACHE20"
+            ],
+            "name": "py312-packaging",
+            "version": "26.2"
+          },
+          {
+            "licenses": [
+              "PSFL"
+            ],
+            "name": "python312",
+            "version": "3.12.13_3"
+          },
+          {
+            "licenses": [
+              "GPLv3"
+            ],
+            "name": "readline",
+            "version": "8.3.3"
+          },
+          {
+            "licenses": [
+              "GPLv2"
+            ],
+            "name": "rrdtool",
+            "version": "1.10.3"
+          },
+          {
+            "licenses": [
+              "ISCL"
+            ],
+            "name": "s6",
+            "version": "2.14.0.1"
+          },
+          {
+            "licenses": [
+              "ISCL"
+            ],
+            "name": "skalibs",
+            "version": "2.14.5.1"
+          },
+          {
+            "licenses": [
+              "GPLv2"
+            ],
+            "name": "smokeping",
+            "version": "2.9.0_1"
+          },
+          {
+            "name": "spawn-fcgi",
+            "version": "1.6.4_3"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "xorgproto",
+            "version": "2025.1"
+          },
+          {
+            "licenses": [
+              "BSD3CLAUSE",
+              "GPLv2"
+            ],
+            "name": "zstd",
+            "version": "1.5.7_2"
+          }
+        ],
+        "go": [],
+        "java": [],
+        "node": [],
+        "php": [],
+        "python": [
+          {
+            "name": "example",
+            "purl": "",
+            "version": "21.12"
+          },
+          {
+            "name": "packaging",
+            "purl": "",
+            "version": "26.2"
+          }
+        ],
+        "ruby": [],
+        "rust": []
+      },
+      "source": "upstream",
+      "summary": {
+        "dotnet": 0,
+        "freebsd": 232,
+        "go": 0,
+        "java": 0,
+        "node": 0,
+        "php": 0,
+        "python": 2,
+        "ruby": 0,
+        "rust": 0,
+        "total": 234
+      }
+    },
+    "pkg-latest-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-08-10T07:30:03Z",
+      "generated": "2026-08-10T20:36:30Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
