@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-10T20:38:28Z",
+  "generated": "2026-08-16T21:47:14Z",
   "image": "smokeping",
   "tags": {
     "pkg-amd64": {
       "app_version": "2.9.0_1",
       "arch": "amd64",
-      "generated": "2026-08-10T20:36:31Z",
+      "generated": "2026-08-16T21:46:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1696,7 +1696,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_3"
+            "version": "3.12.13_4"
           },
           {
             "licenses": [
@@ -1789,7 +1789,7 @@
     "pkg-latest-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-08-10T20:36:30Z",
+      "generated": "2026-08-16T21:45:57Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -3458,7 +3458,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.1_1"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -3480,7 +3480,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_3"
+            "version": "3.12.13_4"
           },
           {
             "licenses": [
