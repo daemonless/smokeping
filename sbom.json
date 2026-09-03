@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-16T21:47:14Z",
+  "generated": "2026-09-03T23:04:14Z",
   "image": "smokeping",
   "tags": {
     "pkg-amd64": {
       "app_version": "2.9.0_1",
       "arch": "amd64",
-      "generated": "2026-08-16T21:46:09Z",
+      "generated": "2026-09-03T23:03:20Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -154,7 +154,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-openssl-lib",
-            "version": "15.1"
+            "version": "15.1p3"
           },
           {
             "licenses": [
@@ -182,7 +182,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p2"
+            "version": "15.1p3"
           },
           {
             "licenses": [
@@ -252,7 +252,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.125"
+            "version": "3.127"
           },
           {
             "licenses": [
@@ -1135,7 +1135,7 @@
               "MPL20"
             ],
             "name": "p5-Mozilla-CA",
-            "version": "20250602"
+            "version": "20260813"
           },
           {
             "licenses": [
@@ -1696,7 +1696,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_4"
+            "version": "3.12.14"
           },
           {
             "licenses": [
@@ -1789,7 +1789,7 @@
     "pkg-latest-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-08-16T21:45:57Z",
+      "generated": "2026-09-03T23:03:02Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1938,7 +1938,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-openssl-lib",
-            "version": "15.1"
+            "version": "15.1p3"
           },
           {
             "licenses": [
@@ -1966,7 +1966,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p2"
+            "version": "15.1p3"
           },
           {
             "licenses": [
@@ -2036,7 +2036,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.125"
+            "version": "3.127"
           },
           {
             "licenses": [
@@ -2074,7 +2074,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.2"
+            "version": "2.8.3"
           },
           {
             "licenses": [
@@ -2218,7 +2218,7 @@
               "MIT"
             ],
             "name": "libffi",
-            "version": "3.7.1"
+            "version": "3.8.0"
           },
           {
             "licenses": [
@@ -2254,14 +2254,14 @@
               "MIT"
             ],
             "name": "libnghttp2",
-            "version": "1.69.0"
+            "version": "1.70.0"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "libpsl",
-            "version": "0.22.0"
+            "version": "0.23.3"
           },
           {
             "licenses": [
@@ -2326,7 +2326,7 @@
               "BSD2CLAUSE"
             ],
             "name": "nginx",
-            "version": "1.30.4_2,3"
+            "version": "1.30.4_5,3"
           },
           {
             "licenses": [
@@ -2495,7 +2495,7 @@
               "GPLv1+"
             ],
             "name": "p5-Cpanel-JSON-XS",
-            "version": "4.42"
+            "version": "4.43"
           },
           {
             "licenses": [
@@ -2684,7 +2684,7 @@
               "GPLv1+"
             ],
             "name": "p5-HTTP-Date",
-            "version": "6.06"
+            "version": "6.08"
           },
           {
             "licenses": [
@@ -2692,7 +2692,7 @@
               "GPLv1+"
             ],
             "name": "p5-HTTP-Message",
-            "version": "7.01"
+            "version": "7.02"
           },
           {
             "licenses": [
@@ -2780,7 +2780,7 @@
               "GPLv1+"
             ],
             "name": "p5-LWP-Protocol-https",
-            "version": "6.15"
+            "version": "6.17"
           },
           {
             "licenses": [
@@ -2856,7 +2856,7 @@
               "GPLv1+"
             ],
             "name": "p5-Module-Pluggable",
-            "version": "6.3"
+            "version": "6.4"
           },
           {
             "licenses": [
@@ -2919,14 +2919,14 @@
               "MPL20"
             ],
             "name": "p5-Mozilla-CA",
-            "version": "20250602"
+            "version": "20260813"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "p5-Net-DNS",
-            "version": "1.55,1"
+            "version": "1.56,1"
           },
           {
             "licenses": [
@@ -3480,7 +3480,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_4"
+            "version": "3.12.14"
           },
           {
             "licenses": [
