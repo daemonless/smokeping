@@ -37,10 +37,14 @@ RUN pkg update && \
     pkg clean -ay && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 
-# rrdtool 1.11 reports RRDs::VERSION as 1.011, which fails smokeping's
-# `>= 1.199908` gate and disables every colon escape in the graph code.
-RUN sed -i '' 's/\$RRDs::VERSION >= 1\.199908/1/' /usr/local/smokeping/lib/Smokeping.pm && \
-    grep -q 'if ( 1 ){' /usr/local/smokeping/lib/Smokeping.pm
+# Backport of upstream 54e23d2e (unreleased): rrdtool 1.10+ reports
+# RRDs::VERSION as 1.010/1.011, below smokeping's `>= 1.199908` gate, which
+# disables every colon escape in the graph code and breaks graph rendering.
+COPY patches/ /tmp/patches/
+RUN patch -d /usr/local/smokeping -p1 < /tmp/patches/smokeping-2.9.0-rrds-version-gate.patch && \
+    find /usr/local/smokeping -name '*.orig' -delete && \
+    ! grep -rq 199908 /usr/local/smokeping && \
+    rm -rf /tmp/patches
 
 # Create required directories with proper permissions for traversal
 RUN mkdir -p /var/lib/smokeping/data /var/lib/smokeping/images \
