@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-03T23:04:14Z",
+  "generated": "2026-09-14T16:21:24Z",
   "image": "smokeping",
   "tags": {
     "pkg-amd64": {
       "app_version": "2.9.0_1",
       "arch": "amd64",
-      "generated": "2026-09-03T23:03:20Z",
+      "generated": "2026-09-14T16:20:00Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1789,7 +1789,7 @@
     "pkg-latest-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-09-03T23:03:02Z",
+      "generated": "2026-09-14T16:20:07Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2051,7 +2051,7 @@
               "MIT"
             ],
             "name": "curl",
-            "version": "8.21.0"
+            "version": "8.22.0"
           },
           {
             "licenses": [
@@ -2074,7 +2074,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.3"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -2298,7 +2298,7 @@
               "MIT"
             ],
             "name": "libxml2",
-            "version": "2.15.3"
+            "version": "2.15.4"
           },
           {
             "licenses": [
@@ -2495,7 +2495,7 @@
               "GPLv1+"
             ],
             "name": "p5-Cpanel-JSON-XS",
-            "version": "4.43"
+            "version": "4.50"
           },
           {
             "licenses": [
@@ -2692,7 +2692,7 @@
               "GPLv1+"
             ],
             "name": "p5-HTTP-Message",
-            "version": "7.02"
+            "version": "7.04"
           },
           {
             "licenses": [
@@ -2926,7 +2926,7 @@
               "MIT"
             ],
             "name": "p5-Net-DNS",
-            "version": "1.56,1"
+            "version": "1.57,1"
           },
           {
             "licenses": [
@@ -2981,7 +2981,7 @@
               "GPLv1+"
             ],
             "name": "p5-OrePAN2",
-            "version": "0.53"
+            "version": "0.54"
           },
           {
             "licenses": [
@@ -3473,7 +3473,7 @@
               "APACHE20"
             ],
             "name": "py312-packaging",
-            "version": "26.2"
+            "version": "26.3"
           },
           {
             "licenses": [
@@ -3550,7 +3550,7 @@
           {
             "name": "packaging",
             "purl": "",
-            "version": "26.2"
+            "version": "26.3"
           }
         ],
         "ruby": [],
