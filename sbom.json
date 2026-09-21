@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-14T20:54:28Z",
+  "generated": "2026-09-21T22:25:07Z",
   "image": "smokeping",
   "tags": {
     "pkg-amd64": {
       "app_version": "2.9.0_1",
       "arch": "amd64",
-      "generated": "2026-09-14T20:52:39Z",
+      "generated": "2026-09-21T22:01:25Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -49,6 +49,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -181,6 +188,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -252,7 +266,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -267,7 +281,7 @@
               "MIT"
             ],
             "name": "curl",
-            "version": "8.21.0"
+            "version": "8.22.0"
           },
           {
             "licenses": [
@@ -1775,7 +1789,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 232,
+        "freebsd": 234,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1783,13 +1797,13 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 234
+        "total": 236
       }
     },
     "pkg-latest-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-09-14T20:53:25Z",
+      "generated": "2026-09-21T22:01:57Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1833,6 +1847,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -1965,6 +1986,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -2036,7 +2064,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -2326,7 +2354,7 @@
               "BSD2CLAUSE"
             ],
             "name": "nginx",
-            "version": "1.30.4_5,3"
+            "version": "1.30.5,3"
           },
           {
             "licenses": [
@@ -2495,7 +2523,7 @@
               "GPLv1+"
             ],
             "name": "p5-Cpanel-JSON-XS",
-            "version": "4.50"
+            "version": "4.52"
           },
           {
             "licenses": [
@@ -2676,7 +2704,7 @@
               "GPLv1+"
             ],
             "name": "p5-HTTP-Cookies",
-            "version": "6.11"
+            "version": "6.12"
           },
           {
             "licenses": [
@@ -2772,7 +2800,7 @@
               "GPLv1+"
             ],
             "name": "p5-LWP-MediaTypes",
-            "version": "6.04"
+            "version": "6.05"
           },
           {
             "licenses": [
@@ -3436,7 +3464,7 @@
               "BSD3CLAUSE"
             ],
             "name": "pcre2",
-            "version": "10.47_1"
+            "version": "10.48"
           },
           {
             "licenses": [
@@ -3487,7 +3515,7 @@
               "GPLv3"
             ],
             "name": "readline",
-            "version": "8.3.3"
+            "version": "8.3.6"
           },
           {
             "licenses": [
@@ -3559,7 +3587,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 232,
+        "freebsd": 234,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -3567,7 +3595,7 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 234
+        "total": 236
       }
     }
   }
