@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-08T22:28:51Z",
+  "generated": "2026-10-11T08:36:14Z",
   "image": "smokeping",
   "tags": {
     "pkg-aarch64": {
       "app_version": "2.9.0_2",
       "arch": "aarch64",
-      "generated": "2026-10-08T22:27:32Z",
+      "generated": "2026-10-11T08:34:53Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1803,7 +1803,7 @@
     "pkg-latest-aarch64": {
       "app_version": "2.9.0_2",
       "arch": "aarch64",
-      "generated": "2026-10-08T22:27:37Z",
+      "generated": "2026-10-11T08:34:59Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2102,7 +2102,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.8.5"
           },
           {
             "licenses": [
