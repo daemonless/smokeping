@@ -1,0 +1,5 @@
+#!/bin/sh
+# SmokePing rcd unit (source build)
+
+# Start Smokeping daemon
+exec dsu bsd /usr/local/smokeping/bin/smokeping --config=/config/config --nodaemon

@@ -1,5 +1,5 @@
 #!/bin/sh
-# SmokePing s6 service (FreeBSD pkg)
+# SmokePing rcd unit (FreeBSD pkg)
 
 exec /usr/local/bin/smokeping \
     --config=/config/config \

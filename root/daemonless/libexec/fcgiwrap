@@ -1,5 +1,5 @@
 #!/bin/sh
-# fcgiwrap s6 service for SmokePing CGI
+# fcgiwrap rcd unit for SmokePing CGI
 
 # Create socket with www ownership so nginx can connect
 # Note: -u/-g flags for process user cause "Permission denied" in FreeBSD jails

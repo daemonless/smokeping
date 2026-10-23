@@ -57,17 +57,10 @@ RUN mkdir -p /var/lib/smokeping/data /var/lib/smokeping/images \
 
 # Copy configuration and service scripts
 COPY root/ /
+RUN chmod +x /daemonless/libexec/* /daemonless/init.d/*
 
 # Use pkg service script
-COPY root/etc/services.d/smokeping/run.pkg /etc/services.d/smokeping/run
-
-# Make scripts executable
-RUN chmod +x /etc/cont-init.d/* /etc/services.d/*/run 2>/dev/null || true
-
-# Set up s6 service links for smokeping and fcgiwrap
-RUN mkdir -p /run/s6/services/smokeping /run/s6/services/fcgiwrap && \
-    ln -sf /etc/services.d/smokeping/run /run/s6/services/smokeping/run && \
-    ln -sf /etc/services.d/fcgiwrap/run /run/s6/services/fcgiwrap/run
+RUN mv /daemonless/libexec/smokeping.pkg /daemonless/libexec/smokeping
 
 # --- Expose (nginx listens on 80) ---
 EXPOSE 80
