@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-22T00:05:15Z",
+  "generated": "2026-10-23T17:04:13Z",
   "image": "smokeping",
   "tags": {
     "pkg-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-10-22T00:04:11Z",
+      "generated": "2026-10-23T17:03:23Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -181,13 +181,6 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
-            "name": "FreeBSD-rc",
-            "version": "15.1"
-          },
-          {
-            "licenses": [
-              "BSD2CLAUSE"
-            ],
             "name": "FreeBSD-resolvconf",
             "version": "15.1"
           },
@@ -294,13 +287,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
-          },
-          {
-            "licenses": [
               "MIT"
             ],
             "name": "expat",
@@ -399,7 +385,7 @@
               "MIT"
             ],
             "name": "libX11",
-            "version": "1.8.13_1,1"
+            "version": "1.8.14,1"
           },
           {
             "licenses": [
@@ -434,7 +420,7 @@
               "MIT"
             ],
             "name": "libXrender",
-            "version": "0.9.12"
+            "version": "0.9.13"
           },
           {
             "licenses": [
@@ -556,7 +542,7 @@
               "BSD2CLAUSE"
             ],
             "name": "nginx",
-            "version": "1.30.5_2,3"
+            "version": "1.30.6,3"
           },
           {
             "licenses": [
@@ -1728,20 +1714,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
-          },
-          {
-            "licenses": [
               "GPLv2"
             ],
             "name": "smokeping",
@@ -1789,7 +1761,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 234,
+        "freebsd": 230,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1797,13 +1769,13 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 236
+        "total": 232
       }
     },
     "pkg-latest-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-10-22T00:04:07Z",
+      "generated": "2026-10-23T17:03:17Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1979,13 +1951,6 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
-            "name": "FreeBSD-rc",
-            "version": "15.1"
-          },
-          {
-            "licenses": [
-              "BSD2CLAUSE"
-            ],
             "name": "FreeBSD-resolvconf",
             "version": "15.1"
           },
@@ -2089,13 +2054,6 @@
             ],
             "name": "dejavu",
             "version": "2.37_4"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
           },
           {
             "licenses": [
@@ -2354,7 +2312,7 @@
               "BSD2CLAUSE"
             ],
             "name": "nginx",
-            "version": "1.30.6_1,3"
+            "version": "1.30.6_3,3"
           },
           {
             "licenses": [
@@ -3526,20 +3484,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
-          },
-          {
-            "licenses": [
               "GPLv2"
             ],
             "name": "smokeping",
@@ -3587,7 +3531,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 234,
+        "freebsd": 230,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -3595,7 +3539,7 @@
         "python": 2,
         "ruby": 0,
         "rust": 0,
-        "total": 236
+        "total": 232
       }
     }
   }
