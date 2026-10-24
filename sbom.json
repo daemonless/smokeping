@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23T17:04:13Z",
+  "generated": "2026-10-24T09:05:39Z",
   "image": "smokeping",
   "tags": {
     "pkg-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-10-23T17:03:23Z",
+      "generated": "2026-10-24T09:02:04Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -274,7 +274,7 @@
               "MIT"
             ],
             "name": "curl",
-            "version": "8.22.0"
+            "version": "8.23.0"
           },
           {
             "licenses": [
@@ -1775,7 +1775,7 @@
     "pkg-latest-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-10-23T17:03:17Z",
+      "generated": "2026-10-24T09:03:31Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2044,7 +2044,7 @@
               "MIT"
             ],
             "name": "curl",
-            "version": "8.22.0"
+            "version": "8.23.0"
           },
           {
             "licenses": [
@@ -2312,7 +2312,7 @@
               "BSD2CLAUSE"
             ],
             "name": "nginx",
-            "version": "1.30.6_3,3"
+            "version": "1.30.6_4,3"
           },
           {
             "licenses": [
