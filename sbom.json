@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-24T09:05:39Z",
+  "generated": "2026-11-04T17:11:19Z",
   "image": "smokeping",
   "tags": {
     "pkg-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-10-24T09:02:04Z",
+      "generated": "2026-11-04T17:07:38Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -252,14 +252,14 @@
               "MIT"
             ],
             "name": "brotli",
-            "version": "1.2.0,1"
+            "version": "1.2.1,1"
           },
           {
             "licenses": [
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -290,7 +290,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -1135,7 +1135,7 @@
               "MPL20"
             ],
             "name": "p5-Mozilla-CA",
-            "version": "20260813"
+            "version": "20261020"
           },
           {
             "licenses": [
@@ -1775,7 +1775,7 @@
     "pkg-latest-amd64": {
       "app_version": "2.9.0_2",
       "arch": "amd64",
-      "generated": "2026-10-24T09:03:31Z",
+      "generated": "2026-11-04T17:09:47Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1959,7 +1959,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -2022,14 +2022,14 @@
               "MIT"
             ],
             "name": "brotli",
-            "version": "1.2.0,1"
+            "version": "1.2.1,1"
           },
           {
             "licenses": [
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -2037,7 +2037,7 @@
               "MPL11"
             ],
             "name": "cairo",
-            "version": "1.18.2,3"
+            "version": "1.18.6,3"
           },
           {
             "licenses": [
@@ -2103,7 +2103,7 @@
               "LGPL21"
             ],
             "name": "fribidi",
-            "version": "1.0.17"
+            "version": "1.0.18"
           },
           {
             "licenses": [
@@ -2134,7 +2134,7 @@
               "MIT"
             ],
             "name": "harfbuzz",
-            "version": "14.6.0"
+            "version": "15.0.0"
           },
           {
             "licenses": [
@@ -2312,7 +2312,7 @@
               "BSD2CLAUSE"
             ],
             "name": "nginx",
-            "version": "1.30.6_4,3"
+            "version": "1.30.6_10,3"
           },
           {
             "licenses": [
@@ -2481,7 +2481,7 @@
               "GPLv1+"
             ],
             "name": "p5-Cpanel-JSON-XS",
-            "version": "4.52"
+            "version": "4.53"
           },
           {
             "licenses": [
@@ -2905,7 +2905,7 @@
               "MPL20"
             ],
             "name": "p5-Mozilla-CA",
-            "version": "20260813"
+            "version": "20261020"
           },
           {
             "licenses": [
@@ -3415,7 +3415,7 @@
               "LGPL21+"
             ],
             "name": "pango",
-            "version": "1.57.1"
+            "version": "1.58.2"
           },
           {
             "licenses": [
@@ -3490,8 +3490,11 @@
             "version": "2.9.0_2"
           },
           {
+            "licenses": [
+              "BSD3CLAUSE"
+            ],
             "name": "spawn-fcgi",
-            "version": "1.6.4_4"
+            "version": "1.6.6_1"
           },
           {
             "licenses": [
